@@ -3,7 +3,6 @@ import FormInput from "../form-input/form-input";
 import CustomButton from "../custom-button/custom-button";
 import "./sign-in.scss";
 import { signInWithGoogle } from "../../firebase/firebase";
-import { FaGoogle } from "react-icons/fa";
 
 class SignIn extends React.Component {
   constructor(props) {
