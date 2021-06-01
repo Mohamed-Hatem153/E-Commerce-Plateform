@@ -3,13 +3,14 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
-  border-bottom: 1px solid rgb(182, 182, 182);
+  // margin-bottom: 25px;
+  // border-bottom: 1px solid rgb(182, 182, 182);
+  padding: 20px 60px;
 
   .logo-container {
     height: 100%;
     width: 70px;
-    padding: 25px;
+    // padding: 25px;
   }
 
   .options {
@@ -23,6 +24,8 @@
       padding: 10px 15px;
       cursor: pointer;
       font-weight: 600;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
     }
   }
 }
