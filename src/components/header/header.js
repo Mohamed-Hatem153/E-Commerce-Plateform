@@ -3,6 +3,7 @@ import { ReactComponent as Logo } from "../../assets/crown.svg";
 import { auth } from "../../firebase/firebase";
 import "./header.scss";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 import { FaSignOutAlt } from "react-icons/fa";
 import { FaSignInAlt } from "react-icons/fa";
 
@@ -35,4 +36,9 @@ const Header = ({ currentUser }) => {
     </div>
   );
 };
-export default Header;
+const mapStateToProps = (state) => {
+  return {
+    currentUser: state.user.currentUser,
+  };
+};
+export default connect(mapStateToProps)(Header);
