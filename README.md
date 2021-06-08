@@ -6,6 +6,7 @@
 - React Hooks
 - Redux
 - Redux Thunk
+- Redux-Persist
 - react-router-dom
 - Firebase
 - Firebase_auth
