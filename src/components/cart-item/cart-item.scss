@@ -15,6 +15,8 @@
     align-items: flex-start;
     justify-content: center;
     padding: 10px 20px;
+    position: relative;
+    font-size: 1.1rem;
 
     .name {
       font-size: 16px;
@@ -23,6 +25,12 @@
     }
     .price {
       font-weight: 600;
+    }
+    .delete-btn {
+      position: absolute;
+      left: 65px;
+      font-size: 1.3rem;
+      cursor: pointer;
     }
   }
 }
