@@ -6,11 +6,21 @@
   // margin-bottom: 25px;
   // border-bottom: 1px solid rgb(182, 182, 182);
   padding: 20px 60px;
+  position: fixed;
+  z-index: 999;
+  background-color: #fff;
 
   .logo-container {
     height: 100%;
     width: 70px;
+    position: relative;
     // padding: 25px;
+    img {
+      height: 80px;
+      width: 90px;
+      position: absolute;
+      top: -20px;
+    }
   }
 
   .options {

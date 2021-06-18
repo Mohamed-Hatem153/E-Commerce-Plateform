@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Logo } from "../../assets/crown.svg";
+// import { ReactComponent as Logo } from "../../assets/crown.svg";
 import CartIcon from "../cart-icon/cart-icon";
 import CartDropdown from "../cart-dropdown/cart-dropdown";
 import { createStructuredSelector } from "reselect";
@@ -11,12 +11,13 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { FaSignOutAlt } from "react-icons/fa";
 import { FaSignInAlt } from "react-icons/fa";
+import logo from "../../assets/paytm.png";
 
 const Header = ({ currentUser, hidden }) => {
   return (
     <div className="header">
       <Link className="logo-container" to="/">
-        <Logo className="logo" />
+        <img src={logo} alt="logo" />
       </Link>
       <div className="options">
         <Link className="option" to="/">
