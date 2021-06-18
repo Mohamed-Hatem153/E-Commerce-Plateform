@@ -17,21 +17,11 @@ const Footer = () => {
         <div className="left-col">
           <img src={logo} alt="logo" className="logo" />
           <div className="social-media">
-            <a href="#">
-              <FaFacebookF className="fab fa-facebook-f" />
-            </a>
-            <a href="#">
-              <FaTwitter className="fab fa-twitter" />
-            </a>
-            <a href="#">
-              <FaInstagram className="fab fa-instagram" />
-            </a>
-            <a href="#">
-              <FaYoutube className="fab fa-youtube" />
-            </a>
-            <a href="#">
-              <FaLinkedinIn className="fab fa-linkedin-in" />
-            </a>
+            <FaFacebookF className="fab" />
+            <FaTwitter className="fab" />
+            <FaInstagram className="fab" />
+            <FaYoutube className="fab" />
+            <FaLinkedinIn className="fab" />
           </div>
           <p className="rights-text">
             © {new Date().getFullYear()} Created By Mohamed.H.3kl All Rights
