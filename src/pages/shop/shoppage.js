@@ -14,7 +14,14 @@ class ShopPage extends React.Component {
   render() {
     const { match } = this.props;
     return (
-      <div className="shop-page" style={{ padding: "20px 60px" }}>
+      <div
+        className="shop-page"
+        style={{
+          padding: "20px 60px",
+          position: "relative",
+          marginTop: "70px",
+        }}
+      >
         <Route
           exact
           component={CollectionsOverviewContainer}
