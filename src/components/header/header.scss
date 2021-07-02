@@ -21,6 +21,9 @@
     width: 70px;
     position: relative;
     // padding: 25px;
+    @media screen and (max-width: 800px) {
+      width: 65px;
+    }
 
     img {
       height: 80px;
@@ -58,14 +61,3 @@
     }
   }
 }
-// @media only screen and (max-width: 800px) {
-//   .header {
-//     padding: 25px;
-//     height: 60px;
-//     margin-bottom: 20px;
-//   }
-//   .options {
-//     width: 25%;
-//     // padding: 0;
-//   }
-// }
