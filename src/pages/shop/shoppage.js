@@ -4,6 +4,7 @@ import CollectionPageContainer from "../collection/collection-container";
 import { fetchCollectionsStartAsync } from "../../redux/shop/shop-actions";
 import { Route } from "react-router-dom";
 import { connect } from "react-redux";
+import "./shoppage.scss";
 
 const ShopPage = ({ fetchCollectionsStartAsync, match }) => {
   useEffect(() => {
@@ -12,11 +13,11 @@ const ShopPage = ({ fetchCollectionsStartAsync, match }) => {
   return (
     <div
       className="shop-page"
-      style={{
-        padding: "20px 60px",
-        position: "relative",
-        marginTop: "70px",
-      }}
+      // style={{
+      //   padding: "20px 60px",
+      //   position: "relative",
+      //   marginTop: "70px",
+      // }}
     >
       <Route
         exact

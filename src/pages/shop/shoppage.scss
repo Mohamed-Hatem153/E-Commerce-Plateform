@@ -1,0 +1,8 @@
+.shop-page {
+  padding: 20px 60px;
+  position: relative;
+  margin-top: 70px;
+  @media screen and (max-width: 800px) {
+    padding: 20px 10px;
+  }
+}

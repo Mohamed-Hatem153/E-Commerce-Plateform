@@ -1,6 +1,9 @@
 footer {
   background: #f1f1f1;
   padding: 40px 60px;
+  @media screen and (max-width: 800px) {
+    padding: 20px 20px;
+  }
   .footer-container {
     max-width: 1300px;
     margin: auto;
@@ -9,11 +12,23 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap-reverse;
+
     .logo {
       width: 150px;
+      @media screen and (max-width: 800px) {
+        width: 100px;
+        margin-left: 105px;
+        margin-bottom: 0px;
+      }
     }
     .social-media {
       margin: 20px 0;
+      @media screen and (max-width: 800px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+      }
       .fab {
         color: #001a21;
         margin-right: 25px;
@@ -27,18 +42,31 @@ footer {
     }
     .rights-text {
       font-size: large;
+      @media screen and (max-width: 800px) {
+        text-align: center;
+      }
     }
     .right-col {
       h1 {
         font-size: 26px;
+        @media screen and (max-width: 800px) {
+          text-align: center;
+        }
       }
       .border {
         width: 100px;
         height: 4px;
         background: #ff4545;
+        @media screen and (max-width: 800px) {
+          width: 170px;
+          margin: auto;
+        }
       }
       p {
         font-size: large;
+        @media screen and (max-width: 800px) {
+          text-align: center;
+        }
       }
       .newsletter-form {
         display: flex;
@@ -69,33 +97,16 @@ footer {
           margin-left: 20px;
           cursor: pointer;
           transition: opacity 0.3s linear;
+          @media screen and (max-width: 800px) {
+            margin: auto;
+            margin-top: 15px;
+            width: 100%;
+          }
           &:hover {
             opacity: 0.7;
           }
         }
       }
     }
-  }
-}
-@media screen and (max-width: 960px) {
-  .footer-container {
-    max-width: 600px;
-  }
-  .right-col {
-    width: 100%;
-    margin-bottom: 60px;
-  }
-
-  .left-col {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .footer-btn {
-    margin: 0;
-    width: 100%;
-    margin-top: 20px;
   }
 }

@@ -7,15 +7,26 @@
   margin-bottom: 25px;
   box-sizing: border-box;
   margin-top: 70px;
+  @media screen and (max-width: 800px) {
+    margin-top: 60px;
+  }
+
   .hero-right {
     position: absolute;
     right: -7%;
     bottom: -1%;
+    @media screen and (max-width: 800px) {
+      right: -13%;
+      bottom: -5px;
+    }
     .hero-img {
       // max-width: 80rem;
       // width: 100%;
       // height: 50rem;
       width: 50rem;
+      @media screen and (max-width: 800px) {
+        width: 20rem;
+      }
     }
   }
   .hero-left {
@@ -23,21 +34,36 @@
     position: absolute;
     left: 7%;
     top: 20%;
+    @media screen and (max-width: 800px) {
+      left: 5%;
+      top: 15%;
+    }
     .hero-span {
       display: inline-block;
       font-size: 2rem;
       // margin-bottom: 1rem;
+      @media screen and (max-width: 800px) {
+        font-size: 1.3rem;
+      }
     }
     .hero-h1 {
       font-size: 3.5rem;
       margin-bottom: 1rem;
       line-height: 1.2;
       font-weight: 600;
+      @media screen and (max-width: 800px) {
+        font-size: 2rem;
+        margin-bottom: 0.2rem;
+        margin-top: 0.2rem;
+      }
     }
     .hero-small {
       display: block;
       font-size: 1.6rem;
       margin-bottom: 0.5rem;
+      @media screen and (max-width: 800px) {
+        font-size: 1.2rem;
+      }
     }
     .hero-button {
       display: inline-block;
@@ -48,68 +74,13 @@
       margin-top: 1rem;
       transition: all 300ms ease-out;
       letter-spacing: 1.5px;
+      @media screen and (max-width: 800px) {
+        font-size: 12px;
+        padding: 0.5rem 1rem;
+      }
       &:hover {
         color: #ff4545;
         background-color: #fff;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .hero {
-    .hero-right .hero-img {
-      height: 50rem;
-    }
-
-    .hero-left {
-      .hero-span {
-        font-size: 1.7rem;
-      }
-
-      .hero-h1 {
-        font-size: 3.5rem;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 996px) {
-  .hero {
-    .hero-left {
-      top: 30%;
-    }
-
-    .hero-right {
-      .hero-img {
-        height: 35rem;
-      }
-
-      right: -10%;
-    }
-  }
-}
-
-@media only screen and (max-width: 567px) {
-  .hero {
-    .hero-left {
-      top: 25%;
-    }
-
-    .hero-right {
-      .hero-img {
-        height: 30rem;
-      }
-
-      right: -18%;
-    }
-
-    .hero-left {
-      .hero-span {
-        font-size: 1.6rem;
-      }
-
-      .hero-h1 {
-        font-size: 3rem;
       }
     }
   }

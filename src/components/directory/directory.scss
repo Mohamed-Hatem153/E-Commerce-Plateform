@@ -8,3 +8,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media screen and (max-width: 800px) {
+  .directory {
+    padding: 10px;
+  }
+}

@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+// import { GlobalStyle } from "./global-styles";
 import "./App.css";
 import HomePage from "./pages/homepage/homepage";
 import ShopPage from "./pages/shop/shoppage";
